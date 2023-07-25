@@ -1,4 +1,4 @@
-let chatsData = []; // Declare chatsData in the global scope
+let chatsData = [];
 
 // Input button
 document.getElementById('chatFileInput').addEventListener('change', async (event) => {
@@ -7,7 +7,7 @@ document.getElementById('chatFileInput').addEventListener('change', async (event
 
   localStorage.setItem('chats', JSON.stringify(chatsData, null, 2));
 
-  displayChatList(chatsData); // Call displayChatList to show the chat list
+  displayChatList(chatsData); 
 });
 
 // Function to display people list
@@ -29,7 +29,7 @@ function displayChatList(chats) {
         selectedChat.classList.remove('selected');
       }
       chatItem.classList.add('selected');
-      displayChatHistory(chat.messages, chat); // Pass the 'chat' object as a parameter
+      displayChatHistory(chat.messages, chat); 
     });
 
     chatListDiv.appendChild(chatItem);
