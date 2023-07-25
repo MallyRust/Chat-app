@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat History Import</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+            <div class="buttons">
+                <label for="chatFileInput" class="btn">Import</label>
+                <input type="file" id="chatFileInput" accept=".json" style="visibility: hidden;" />
+                <button id="exportButton">Export</button>
+                <button id="clearButton">Clear</button>
+            </div>
+
+    </header>
+
+    <div class="chats">
+    <div id="chatList"> </div>
+
+    <div id="chatPanel"></div>
+
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</body>
+</html>
